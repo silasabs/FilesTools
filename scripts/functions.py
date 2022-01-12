@@ -23,7 +23,7 @@ def initialize():
     print(title, 'Organize your directories\n')
     
     # instructions.
-    print("1. Organize directory\n2. Hash a file\n3. Compress directory\n4. Exit")
+    print("1. Organize directory\n2. Get Hash a file\n3. Compress directory\n4. Exit")
 
 
 def clear_display():
