@@ -1,7 +1,6 @@
 from functions import *
 
-def main():
-    
+def main():  
     option = 0
 
     while option != 4:
