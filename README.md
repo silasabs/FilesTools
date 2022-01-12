@@ -13,8 +13,10 @@ The app should only be used for testing some things may change, such as adding n
 
 Clone this repository.
 
-  $ git clone https://github.com/silasabs/FilesTool
-
+```
+$ git clone https://github.com/silasabs/FilesTool
+```
 ## License
 This software is released under the MIT license.
+
 See LICENSE for more information.
