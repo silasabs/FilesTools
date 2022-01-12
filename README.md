@@ -9,7 +9,7 @@ Files Tool is an experimental application for organizing directories and automat
 
 ## Organizing directories
 
-Directory organization supports any type of extension.
+Directory organization supports any type of extension. The function must search for all files present in the directory and separate them by their respective extensions.
 
 ## Status
 

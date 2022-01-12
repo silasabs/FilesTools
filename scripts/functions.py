@@ -31,6 +31,8 @@ def clear_display():
     function responsible for cleaning the terminal.
     """
     time.sleep(2.5)
+    # for linux  
+    # return os.system('clear') or None
     return os.system('cls') or None
 
 
