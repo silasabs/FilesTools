@@ -3,7 +3,7 @@
 
 Files Tool is an experimental application for organizing directories and automating tasks, as well as checking file integrity using SHA256 that has a certain amount of collision resistance.
 
-<p align="center">
+<p align="left">
   <img src="https://i.postimg.cc/63wK7zX3/screenshot.jpg" height="390" width="550">
 </p>
 
