@@ -2,9 +2,9 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)  [![Licence](https://img.shields.io/badge/License-MIT-critical)](https://github.com/silasabs/FilesTool/blob/main/LICENSE)
 
 Files Tool is an experimental application for organizing directories and automating tasks, as well as checking file integrity using SHA256 that has a certain amount of collision resistance.
-
+<br><br>
 <p align="left">
-  <img src="https://i.postimg.cc/fbKN4XG0/screenshot.jpg">
+  <img src="https://i.postimg.cc/fbKN4XG0/screenshot.jpg ">
 </p>
 
 ## Organizing directories
