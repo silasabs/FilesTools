@@ -15,13 +15,11 @@ def main():
             try:
                 PATH = load_path()
                 organizer(PATH)
-
             except Exception as error:
                 print(f'error found {error.__cause__}')
-
             else: 
                 print('Organized directory !')
-            
+
             clear_display()
         
         elif option == 2:
@@ -37,11 +35,9 @@ def main():
             
             try:
                 PATH = load_path()
-                compression(PATH)
-            
+                compression(PATH)           
             except Exception as error:
                 print(f'error found {error.__cause__}')
-            
             else:
                 print('The files have been compressed !')
 
