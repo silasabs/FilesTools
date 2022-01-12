@@ -5,7 +5,7 @@ Files Tool is an experimental application for organizing directories and automat
 
 ## Organizing directories
 
-
+Directory organization supports any type of extension.
 
 ## Status
 
