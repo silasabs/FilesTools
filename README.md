@@ -9,7 +9,7 @@ Files Tool is an experimental application for organizing directories and automat
 
 ## Status
 
-The app should only be used for testing some things may change, such as adding new security functions and automating tasks.
+The application should only be used for testing. Some things may change, such as adding new security functions and new task automation functions.
 
 Clone this repository.
 
