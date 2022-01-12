@@ -1,0 +1,6 @@
+*.pdf
+*.png
+*.pyc
+
+# python generated cache
+/scripts/__pycache__
