@@ -26,6 +26,15 @@ def initialize():
     print("1. Organize directory\n2. Get Hash a file\n3. Compress directory\n4. Exit")
 
 
+def fileName(path):
+    """
+    Function that returns the name of files in python
+    """
+    path = os.path.splitext(path)[0]
+    file_name = path.split('/')[-1]
+    return file_name
+
+
 def clear_display():
     """
     function responsible for cleaning the terminal.
