@@ -28,7 +28,7 @@ def initialize():
 
 def fileName(path):
     """
-    Function that returns the name of files in python
+    Function that returns the name of files.
     """
     path = os.path.splitext(path)[0]
     file_name = path.split('/')[-1]
