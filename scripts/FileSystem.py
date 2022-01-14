@@ -69,6 +69,26 @@ def load_file():
     return str(path)
 
 
+def checkExtension(path, str):
+    """
+    This function is responsible for checking the extension of a file.
+    param path: File path.
+    param str: Extension to be compared.
+    """
+    flag = True
+    while extensionName(path) != str:
+        print('Unsupported file. Try again')
+        path = load_file()
+
+        if path:
+            continue
+        else:
+            print('No files were selected.')
+            flag = False
+            break
+    
+    return flag
+
 def organizer(path):
     """
     function responsible for organizing the files of a directory assigning folders for each extension found.

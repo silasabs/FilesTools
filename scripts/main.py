@@ -1,3 +1,4 @@
+from contextlib import nullcontext
 from FileSystem import *
 from EncryptFiles import *
 import pyfiglet
@@ -32,18 +33,20 @@ def main():
             print('Select the directory you want to organize')
             
             try:
-                PATH = load_path()
-                organizer(PATH)
+                path = load_path()
+                organizer(path)
+            
             except Exception as error:
-                print(f'error found {error.__cause__}')
+                print(f'Error found {error.__cause__}')
+            
             else: 
                 print('Organized directory !')
         
         elif option == 2:
             print('Select the file you want to generate the Hash')
-            PATH = load_file()
+            path = load_file()
 
-            SHA256 = hash(PATH)
+            SHA256 = hash(path)
             print('Hash generated SHA256: ', SHA256)
 
         elif option == 3:
@@ -52,8 +55,10 @@ def main():
             try:
                 PATH = load_path()
                 compression(PATH)           
+            
             except Exception as error:
-                print(f'error found {error.__cause__}')
+                print(f'Error found {error.__cause__}')
+            
             else:
                 print('The files have been compressed !')
 
@@ -63,41 +68,54 @@ def main():
             print('your keys have been generated.')
 
         elif option == 5:
+            
             try:              
                 print('Select the file you want to encrypt [.txt]')
                 path_file = load_file()
-                print('select your public key.')
-                path_key = load_file()
-
-                encryptTextFile(path_key, path_file)
-
+                # Checks if the file is .txt and if any file was selected.
+                if checkExtension(path_file, 'txt') == True:
+                    print('Select your public key.')
+                    path_key = load_file()
+                    # Checks the key extension and if true the file is encrypted.
+                    if checkExtension(path_key, 'pem') == True:
+                        encryptTextFile(path_key, path_file)
+                        print('The file was encrypted.')
+                else:
+                    print('Unable to perform encryption.')
+                    
             except Exception as error:
-                print(f'error found {error.__cause__}')          
+                print(f'Error found {error.__cause__}')          
             
-            else:
-                print('the file was encrypted.')
+            finally:
+                print('Thanks for using FilesTool !')
         
         elif option == 6:
+            
             try:
                 print('Select your private key')
                 path_key = load_file()
-                print('Select the file to be decrypted')
-                path_file = load_file()
-
-                decryptTextFile(path_key, path_file)
+                # Checks if the file is .pem and if any file was selected.
+                if checkExtension(path_key, 'pem') == True:
+                    print('Select the file to be decrypted')
+                    path_file = load_file()
+                    # Checks the key extension and if true the file is decrypted.
+                    if checkExtension(path_file, 'bin') == True:
+                        decryptTextFile(path_key, path_file)
+                        print('The file has been decrypted.')              
+                else:
+                    print('Unable to decrypt the file.')
             
             except Exception as error:
                 print(f'error found {error.__cause__}')
             
-            else:
-                print('The file has been decrypted.')
+            finally:
+                print('Thanks for using FilesTool !')
 
         elif option == 7:
             break
         
         else:
             print('invalid option')
-            clear_display()
         
         clear_display()
 
