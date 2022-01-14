@@ -15,17 +15,6 @@ root = tk.Tk()
 root.withdraw()
 
 
-def initialize():
-    """
-    Function responsible for initializing user instructions.
-    """
-    title = pyfiglet.figlet_format("Files Tool")
-    print(title, 'Organize your directories\n')
-    
-    # instructions.
-    print("1. Organize directory\n2. Get Hash a file\n3. Compress directory\n4. Exit")
-
-
 def fileName(path):
     """
     Function that returns the name of a file.
