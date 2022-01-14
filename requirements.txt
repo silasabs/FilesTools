@@ -1,4 +1,4 @@
 haslib
 tkinter >= 8.6
 pyfiglet >= 0.7
-pycrypto >= 2.6.1
+pycryptodome >= 3.12.0
