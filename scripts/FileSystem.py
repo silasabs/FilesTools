@@ -28,11 +28,19 @@ def initialize():
 
 def fileName(path):
     """
-    Function that returns the name of files.
+    Function that returns the name of a file.
     """
     path = os.path.splitext(path)[0]
-    file_name = path.split('/')[-1]
-    return file_name
+    name_file = path.split('/')[-1]
+    return name_file
+
+
+def extensionName(path):
+    """
+    Function responsible for returning the extension of a file.
+    """
+    extension = os.path.splitext(path)[1][1:]
+    return extension
 
 
 def clear_display():
