@@ -3,7 +3,7 @@ from setuptools import setup
 DISTNAME = 'Files Tools'
 DESCRIPTION = 'Set of scripts for automating tasks'
 LONG_DESCRIPTION = open('README.md', encoding="utf8").read()
-MAINTAINER = 'Silas João'
+MAINTAINER = 'Silas João, Mikael Amaral, Arthur Henrique, Luiz Henrique e Ewerton Cordeiro'
 URL = 'https://github.com/silasabs/FilesTool'
 LICENSE = 'MIT'
 
