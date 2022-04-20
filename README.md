@@ -18,7 +18,7 @@ The application should only be used for testing. Some things may change, such as
 ## Installation.
 
 ```
-$ git clone https://github.com/silasabs/FilesTool
+$ git clone https://github.com/silasabs/FilesTool.git
 $ cd FilesTool
 $ python setup.py install
 ```
