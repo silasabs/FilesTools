@@ -1,7 +1,10 @@
+from hashlib import sha256
 from os import path
 from Crypto import Cipher
 from Crypto.PublicKey import RSA
 from Crypto.Cipher import AES, PKCS1_OAEP
+from Crypto.Signature import pkcs1_15
+from Crypto.Hash import SHA256
 from Crypto.Random import get_random_bytes
 from FileManagement import *
 
@@ -84,3 +87,33 @@ def decryptTextFile(path_private_key, path_file):
     new_file.write(string)
     new_file.close()
     file.close()
+
+
+def signatureFile(file, path_private_key):
+    """
+    """
+    with open(file, 'rb') as stream:
+        data = stream.read()
+    
+    key = RSA.import_key(open(path_private_key).read())
+    hash = SHA256.new(data)
+    signature = pkcs1_15.new(key).sign(hash)
+
+    return signature
+
+
+def verifySignatureFile(path_public_key, signature, file):
+    """
+    """
+    with open(file, 'rb') as stream:
+        data = stream.read()
+
+    key = RSA.import_key(open(open(path_public_key)).read())
+    hash = SHA256.new(data)
+    
+    try:
+        pkcs1_15.new(key).verify(hash, signature)
+        print('The signature is valid.')
+    
+    except(ValueError, TypeError):
+        print('The signature is not valid.')

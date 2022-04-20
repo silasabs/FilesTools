@@ -45,6 +45,7 @@ def clear_display():
 def load_path():
     """
     Function responsible for selecting the requested directory.
+    return: directory returned as string.
     """
     path = dlg.askdirectory()
     return str(path)
@@ -53,6 +54,7 @@ def load_path():
 def load_file():
     """
     Function responsible for selecting the requested file.
+    return: directory where the file is located.
     """
     path = dlg.askopenfilename()
     return str(path)
@@ -63,6 +65,8 @@ def checkExtension(path, str):
     This function is responsible for checking the extension of a file.
     param path: File path.
     param str: Extension to be compared.
+
+    return flag: returns a boolean about the extent to be checked.
     """
     flag = True
     while extensionName(path) != str:
@@ -103,7 +107,9 @@ def organizer(path):
 def hash(filepath):
     """
     function responsible for generating a hash of a given file in SHA256.
-    param filepath: directory where the file is located. 
+    param filepath: directory where the file is located.
+
+    return: SHA256 requested file hash  
     """
     with open(filepath, 'rb') as stream:
         hash = hashlib.sha256(stream.read())
