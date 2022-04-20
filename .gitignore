@@ -4,3 +4,6 @@
 
 # python generated cache
 /scripts/__pycache__
+
+/build
+/dist
