@@ -15,10 +15,12 @@ Directory organization supports any type of extension. The function must search 
 
 The application should only be used for testing. Some things may change, such as adding new security functions and new task automation functions.
 
-Clone this repository.
+## Installation.
 
 ```
 $ git clone https://github.com/silasabs/FilesTool
+$ cd FilesTool
+$ python setup.py install
 ```
 ## License
 This software is released under the MIT license.
