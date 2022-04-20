@@ -18,8 +18,8 @@ The application should only be used for testing. Some things may change, such as
 ## Installation.
 
 ```
-$ git clone https://github.com/silasabs/FilesTool.git
-$ cd FilesTool
+$ git clone https://github.com/silasabs/FilesTools.git
+$ cd FilesTools
 $ python setup.py install
 ```
 ## License
