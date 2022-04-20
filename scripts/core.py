@@ -1,6 +1,7 @@
-# script created with the purpose of automating everyday tasks in addition to implementing security functions 
-# such as the generation of hash in SHA256, which has a certain resistance to collision in addition to verifying
-# the integrity of the files.
+# script created with the purpose of automating everyday tasks
+# in addition to implementing security functions such as the
+# generation of hash in SHA256, which has a certain resistance
+# to collision in addition to verifying the integrity of the files.
 
 import tkinter as tk
 from tkinter import filedialog as dlg

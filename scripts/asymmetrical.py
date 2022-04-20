@@ -6,7 +6,7 @@ from Crypto.Cipher import AES, PKCS1_OAEP
 from Crypto.Signature import pkcs1_15
 from Crypto.Hash import SHA256
 from Crypto.Random import get_random_bytes
-from FileManagement import *
+from core import *
 
 def generate_key():
     """
