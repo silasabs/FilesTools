@@ -5,7 +5,6 @@
 import tkinter as tk
 from tkinter import filedialog as dlg
 import hashlib
-import pyfiglet
 import time
 import os
 import shutil
